@@ -1,0 +1,63 @@
+/*--primary: #0F172A;    أزرق داكن رمادي 
+--secondary: #1E293B;  أزرق داكن 
+--accent: #38BDF8;     أزرق سماوي رائع 
+--text: #F8FAFC;        أبيض تقني 
+--muted: #94A3B8;      رمادي ناعم */
+
+body{
+    background-color: #0F172A;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: #F8FAFC;
+}
+
+/* nav items style */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E293B;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: #38BDF8;
+}
+.logo{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 32px;
+    margin: 10px;
+    text-decoration: none;
+    color: #38BDF8;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    padding: 5px;
+    margin: 5px;
+}
+.nav_list a{
+    text-decoration: none;
+    color: #F8FAFC;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav_list li{
+    list-style-type: none;
+}
+
+/* main style */
+main{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+        
