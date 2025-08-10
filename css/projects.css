@@ -1,0 +1,39 @@
+/*--primary: #0F172A;    أزرق داكن رمادي 
+--secondary: #1E293B;  أزرق داكن 
+--accent: #38BDF8;     أزرق سماوي رائع 
+--text: #F8FAFC;        أبيض تقني 
+--muted: #94A3B8;      رمادي ناعم */
+.content_h{
+    margin: 50px 100px;
+    height: 700px;
+}
+h1{ 
+    color: #ee1689;
+    font-size: 100px;
+    font-weight: 900;
+}
+.content_h p{
+    margin-top: 80px;
+    font-size: 25px;
+}
+.main_h{
+    height: 1575;
+}
+.skills_sect{
+    background-color: #1E293B;
+    margin-top: 75px;
+    border-radius: 15px;
+    width: 90%;
+    height: 300px;
+
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 600ms ease-in-out;
+    z-index: 1;
+
+}
+.skills_sect.show{
+    opacity: 1;
+    transform: translateX(0s);
+    z-index: 1;
+}

@@ -1,0 +1,108 @@
+/*--primary: #0F172A;    أزرق داكن رمادي 
+--secondary: #1E293B;  أزرق داكن 
+--accent: #38BDF8;     أزرق سماوي رائع 
+--text: #F8FAFC;        أبيض تقني 
+--muted: #94A3B8;      رمادي ناعم */
+.wave-container {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .wave-row {
+      position: absolute;
+      width: 200%;
+      height: 160px;
+      background-repeat: repeat-x;
+      background-size: contain;
+      opacity: 0.3;
+    }
+
+    .wave-blue {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2338BDF8" d="M0,160 C360,260 1080,60 1440,160 L1440,320 L0,320 Z"/></svg>');
+      z-index: 2;
+    }
+
+    .wave-purple {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%237C3AED" d="M0,160 C360,260 1080,60 1440,160 L1440,320 L0,320 Z"/></svg>');
+      transform: scaleY(-1);
+      transform-origin: center;
+      z-index: 1;
+      margin-top: 160px; /* هذا يخلي الموجة البنفسجية تلتقي مع الزرقاء من القاعدة */
+    }
+
+    .wave-pair {
+      position: absolute;
+      width: 100%;
+      height: 160px;
+    }
+
+    .wave-pair:nth-child(1) { top: 25%; }
+    .wave-pair:nth-child(2) { top: 25%; }
+    .wave-pair:nth-child(3) { top: 50%; }
+    .wave-pair:nth-child(4) { top: 50%; }
+
+    /* الأزرق دائماً فوق */
+    .wave-pair .wave-blue   { top: 0; }
+    .wave-pair .wave-purple { top: 0; }
+
+    .move-right {
+      animation: waveMoveRight 10s linear infinite;
+    }
+
+    .move-left {
+      animation: waveMoveLeft 10s linear infinite;
+    }
+
+    @keyframes waveMoveRight {
+      from { background-position-x: -1440px; }
+      to   { background-position-x: 0; }
+    }
+
+    @keyframes waveMoveLeft {
+      from { background-position-x: 0; }
+      to   { background-position-x: -1440px; }
+    }
+    h1{
+        color: #d31e7e;
+        font-size: 100px;
+        font-weight: 900;
+    }
+    .content_h p{
+        margin-top: 80px;
+        font-size: 25px;
+        height: 700px;
+    }
+    .skills_grid{
+        display: grid;
+        grid-template-areas: 
+        "cell1 cell2"
+        "cell3 cell3"
+        "cell4 cell4"
+        ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+        gap: 20px;
+    }
+    .skills_cell1{
+        background-color: #1E293B;
+        grid-area: cell1;
+        border-radius: 15px;
+    }
+    .skills_cell2{
+        background-color: #1E293B;
+        grid-area: cell2;
+        border-radius: 15px;
+    }
+    .skills_cell3{
+        background-color: #1E293B;
+        grid-area: cell3;
+        border-radius: 16;
+    }
+    .skills_cell4{
+        background-color: #1E293B;
+        grid-area: cell4;
+        border-radius: 15px;
+    }

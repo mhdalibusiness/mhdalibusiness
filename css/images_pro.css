@@ -1,0 +1,12 @@
+.skills_image{
+    max-height: 280px;
+    max-width: 280px;
+    border-radius: 15px;
+    border: 1px #808080;
+}
+.skills_sect{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}

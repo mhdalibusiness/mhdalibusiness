@@ -1,68 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Mohammad Ali Business</title>
-    <style>
-        .first_the_page{
-            display: flex;
-            flex-direction: column;
-            height: 500px;
-            /* background-color: yellowgreen; */
-            justify-content: space-evenly;
-            padding: 10px 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/images_in.css">
+    <title>هيرو</title>
 </head>
 <body>
+    <div class="wave-container">
+    <!-- الزوج 1: يتحرك يمين -->
+    <div class="wave-pair">
+      <div class="wave-row wave-purple move-right"></div>
+      <div class="wave-row wave-blue move-right"></div>
+    </div>
+
+    <!-- الزوج 2: يتحرك يسار -->
+    <div class="wave-pair">
+      <div class="wave-row wave-purple move-left"></div>
+      <div class="wave-row wave-blue move-left"></div>
+    </div>
+
+    <!-- الزوج 3: يتحرك يمين -->
+    <div class="wave-pair">
+      <div class="wave-row wave-purple move-right"></div>
+      <div class="wave-row wave-blue move-right"></div>
+    </div>
+
+    <!-- الزوج 4: يتحرك يسار -->
+    <div class="wave-pair">
+      <div class="wave-row wave-purple move-left"></div>
+      <div class="wave-row wave-blue move-left"></div>
+    </div>
+  </div>
+
     <nav>
-        <a href="javascript:void(0)" class="logo">HERO BMZ</a>
+        <a href="javascript:void(0)" class="logo">هيرو</a>
         <ul class="nav_list">
             <li class="nav_item">
-                <a href="javascript:void(0)">Projects</a>
+                <a href="projects.html">مشاريع</a>
             </li>
             <li>
-                <a href="javascript:void(0)">Call Us</a>
+                <a href="call_us.html">اتصل بنا</a>
             </li>
             <li>
-                <a href="javascript:void(0)">About Us</a>
+                <a href="cv.html">CV</a>
             </li>
         </ul>
     </nav>
-
     <main>
-        <div class="first_the_page">
-            <div class="title_pragraph">
-                <h1>Welcome to my Profile</h1>
-                <p>I am hero, what is your Name? <br> How can i help you?</p>
-            </div>
-            <div class="p_ptn">
-                <p>For More details </p>
-                <button>click here</button>
-            </div>
+        <div class="content_h">
+            <h1>مرحبا في ملفي الشخصي</h1>
+            <p>خذ لك جولة في الموقع وتفحص اعمالي, اعطني نصائح, او اطلب المساعدة وانا في الخدمة.</p>
         </div>
-
-        <div class="secound_the_page">
-            <div class="top_left">
-
+        <div class="skills_grid">
+            <div class="skills_cell1 skills_cells">
+              <p>هنا صور للمشاريع الكبيرة</p>
+              <div class="images">
+                <img src="images/ai_generation.jpg" alt="ai_generation">
+                <img src="images/syria_present.jpg" alt="ai_generation">
+                <img src="images/my_desktop.jpg" alt="ai_generation">
+              </div>
             </div>
-            <div class="top_right">
 
+            <div class="skills_cell2 skills_cells">
+              <p>هنا صور للمشاريع الصغيرة</p>
+              <div class="images">
+                <img src="images/ai_generation.jpg" alt="ai_generation">
+                <img src="images/syria_present.jpg" alt="ai_generation">
+                <img src="images/my_desktop.jpg" alt="ai_generation">
+              </div>
             </div>
-            <div class="center_bottom">
-                
+
+            <div class="skills_cell3 skills_cells">
+              <p>هنا صور للفريق الذي لدي</p>
+              <div class="images">
+                <img src="images/ai_generation.jpg" alt="ai_generation">
+                <img src="images/syria_present.jpg" alt="ai_generation">
+                <img src="images/my_desktop.jpg" alt="ai_generation">
+                <img src="images/syria_present.jpg" alt="ai_generation">
+                <img src="images/my_desktop.jpg" alt="ai_generation">
+              </div>
             </div>
+
+            <div class="skills_cell4 skills_cells">
+              <p>هنا صور لانجازات الفريق</p>
+              <div class="images">
+                <img src="images/ai_generation.jpg" alt="ai_generation">
+                <img src="images/syria_present.jpg" alt="ai_generation">
+                <img src="images/my_desktop.jpg" alt="ai_generation">
+                <img src="images/syria_present.jpg" alt="ai_generation">
+                <img src="images/my_desktop.jpg" alt="ai_generation">
+                <img src="images/syria_present.jpg" alt="ai_generation">
+              </div>
+            </div>
+
         </div>
-
     </main>
-
-    <footer>
-
-    </footer>
+    
+    <script src="js/smoth_scrol.js"></script>
 </body>
 </html>

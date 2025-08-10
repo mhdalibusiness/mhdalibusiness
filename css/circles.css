@@ -1,0 +1,77 @@
+        .circles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none; /* عشان ما تأثر على التفاعل */
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: float 30s linear infinite;
+}
+
+.circle1 {
+  width: 150px;
+  height: 150px;
+  background-color: #38BDF8; /* accent */
+  top: 80%;
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.circle2 {
+  width: 100px;
+  height: 100px;
+  background-color: #7C3AED; /* بنفسجي متناسق */
+  top: 90%;
+  left: 70%;
+  animation-delay: 5s;
+}
+
+.circle3 {
+  width: 200px;
+  height: 200px;
+  background-color: #94A3B8; /* muted */
+  top: 85%;
+  left: 50%;
+  animation-delay: 10s;
+}
+
+.circle4 {
+  width: 120px;
+  height: 120px;
+  background-color: #1E293B; /* secondary */
+  top: 95%;
+  left: 35%;
+  animation-delay: 15s;
+}
+
+.circle5 {
+  width: 180px;
+  height: 180px;
+  background-color: #38BDF8;
+  top: 100%;
+  left: 80%;
+  animation-delay: 20s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateY(-500px) scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-1000px) scale(1);
+    opacity: 0;
+  }
+}
